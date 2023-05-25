@@ -98,6 +98,7 @@ body {
     gap: 3px;
     background-color: aqua;
     padding: 15px 0;
+    height: 80vh;
 }
 
 .hero .container-hero1 {
@@ -110,13 +111,16 @@ body {
 
 .hero .container-hero1 #photo {
     border-radius: 50%;
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 50%;
 }
 
 .hero .container-hero2 {
     grid-area: 1/3/2/4;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
 }
 
 .hero .container-hero2 h2 {
@@ -138,4 +142,30 @@ body {
     color: blueviolet;
     text-align: justify;
     margin-bottom: 1rem;
+}
+
+.hero .container-hero2 button {
+    color: rgb(250, 250, 250);
+    border: 0;
+    /* width: 50%;
+    height: 50px; */
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    padding: 4px;
+    transition: .4ms;
+}
+
+.hero .container-hero2 button span {
+    background-color: #111;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: .3ms;
+}
+
+.hero .container-hero2 button:hover span {
+    background: none;
 }
