@@ -254,8 +254,8 @@ p {
 
 .container-main1 {
     display: grid;
-    grid-template-columns: 0.3fr 3fr 2fr 3fr 0.3fr;
-    grid-template-rows: 13% 87%;
+    grid-template-columns: 0.3fr repeat(3, 1fr) 0.3fr;
+    grid-template-rows: 20% 40% 40%;
     background-color: aqua;
     padding-top: 12vh;
     padding-bottom: 15px;
@@ -263,4 +263,78 @@ p {
     width: 80%;
     border-radius: 50px;
     border: solid 1px red;
+}
+
+.container-main1 .container-main-skills0 {
+    grid-area: 1/2/2/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.container-main1 .container-main-skills1 {
+    grid-area: 2/2/3/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.container-main1 .container-main-skills2 {
+    grid-area: 2/3/3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.container-main1 .container-main-skills3 {
+    grid-area: 2/4/3/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.container-main1 .container-main-skills4 {
+    grid-area: 3/2/4/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.container-main1 .container-main-skills5 {
+    grid-area: 3/3/4/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.container-main1 .container-main-skills6 {
+    grid-area: 3/4/4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.container-main1 img {
+    width: 50%;
+    height: 50%;
+}
+
+.container-main1 img:hover {
+    width: 50%;
+    height: 50%;
+    opacity: 0.4;
+    
 }
