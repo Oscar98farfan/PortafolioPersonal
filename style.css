@@ -23,6 +23,16 @@ header {
     align-items: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    text-align: justify;
+}
+
 
 .container-nav {
     display: flex;
@@ -104,7 +114,7 @@ header {
     grid-template-rows: auto;
     background-color: aqua;
     padding: 15px 0;
-    height: 80vh;
+    height: 85vh;
     width: 80%;
     border-radius: 50px;
     border: solid 1px red;
@@ -139,7 +149,6 @@ header {
 .hero .container-hero2 h2 {
     font-size: 2rem;
     color: blueviolet;
-    text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -153,7 +162,6 @@ header {
 
 .hero .container-hero2 p {
     color: blueviolet;
-    text-align: justify;
     margin-bottom: 1rem;
 }
 
@@ -199,3 +207,45 @@ header {
     margin: 10px;
 }
 
+.container-main {
+    display: grid;
+    grid-template-columns: 0.3fr 3fr 2fr 3fr 0.3fr;
+    grid-template-rows: 13% 87%;
+    background-color: aqua;
+    margin: 2rem 0;
+    padding: 15px 0;
+    height: 85vh;
+    width: 80%;
+    border-radius: 50px;
+    border: solid 1px red;
+}
+
+.container-main .container-main-about1 {
+    grid-area: 1/2/2/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.container-main .container-main-about2 {
+    grid-area: 2/2/3/4;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-main .container-main-about3 {
+    grid-area: 2/4/3/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.container-main .container-main-about3 img {
+    width: 80%;
+    height: 80%;
+}
