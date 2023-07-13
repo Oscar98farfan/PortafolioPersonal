@@ -9,27 +9,42 @@
 </head>
 <body>
     <header>
-        <nav class="container-nav">
-            <ul>
-                <li><a class="items-nav" href="">HOME</a></li>
-                <li><a class="items-nav" href="#about-me">SOBRE MI</a></li>
-                <li><a class="items-nav" href="#skills">SKILLS</a></li>
-                <li><a class="items-nav" href="">HOBBIES</a></li>
-                <li><a class="items-nav" href="">FORMACIÓN</a></li>
-                <li><a class="items-nav" href="">PROYECTOS</a></li>
-                <li><a class="items-nav" href="">EXPERIENCIA</a></li>
-                <li><a class="items-nav" href="">CONTACTO</a></li>
-            </ul>
+        <nav>
+            <div class="nav-container-desktop">
+                <ul>
+                    <li><a class="items-nav" href="">HOME</a></li>
+                    <li><a class="items-nav" href="#about-me">SOBRE MI</a></li>
+                    <li><a class="items-nav" href="#skills">SKILLS</a></li>
+                    <li><a class="items-nav" href="">HOBBIES</a></li>
+                    <li><a class="items-nav" href="">FORMACIÓN</a></li>
+                    <li><a class="items-nav" href="">PROYECTOS</a></li>
+                    <li><a class="items-nav" href="">EXPERIENCIA</a></li>
+                    <li><a class="items-nav" href="">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="nav-container-mobile" style="display: none;">
+                <nav>
+                    <ul>
+                        <li><a class="items-nav" href="">HOME</a></li>
+                        <li><a class="items-nav" href="#about-me">SOBRE MI</a></li>
+                        <li><a class="items-nav" href="#skills">SKILLS</a></li>
+                        <li><a class="items-nav" href="">HOBBIES</a></li>
+                        <li><a class="items-nav" href="">FORMACIÓN</a></li>
+                        <li><a class="items-nav" href="">PROYECTOS</a></li>
+                        <li><a class="items-nav" href="">EXPERIENCIA</a></li>
+                        <li><a class="items-nav" href="">CONTACTO</a></li>
+                    </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="hero" id="banner">
+        <section class="hero target" style="display: none;" id="banner">
             <div class="container-hero1">
                 <img id="photo" src="./img/Photo-Me.jpg" alt="Oscar Farfan">
             </div>
             <div class="container-hero2">
                 <h2>Hola! Me Llamo Oscar Farfan Juanias</h2>
-                <h3>Soy Ingeniero Industrial y Desarrollador</h3>
+                <h3>Soy Ingeniero Industrial y Desarrollador Full Stack</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis porro maxime maiores inventore, ab esse quaerat voluptates fugit, magnam architecto doloremque mollitia perferendis ea harum voluptas repellat deserunt, facere soluta?</p>
                 <button><span>Descargar CV</span></button>
             </div>
@@ -40,7 +55,7 @@
             </div>
         </section>
 
-        <section class="container-main" id="about-me">
+        <section class="container-main target" style="display: none;" id="about-me">
             <div class="container-main-about1">
                 <h2>SOBRE MI</h2>
             </div>
@@ -52,9 +67,9 @@
             </div>
         </section>
 
-        <section class="container-main1" id="skills">
+        <section class="container-main1 target" id="skills">
             <div class="container-main-skills0">
-                <h2>HE REALZIADO PROYECTOS XXX...</h2>
+                <h2>He realizado diferentes proyectos apoyandome en:</h2>
             </div>
             <div class="container-main-skills1">
                 <img src="./img/html-c.png" alt="HTML">
