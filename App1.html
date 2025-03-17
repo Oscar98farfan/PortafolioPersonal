@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App 1 - Oscar Farfan</title>
+    <link rel="stylesheet" href="styleApps.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html">⬅ Volver</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Prueba la Aplicación Móvil</h1>
+        <p class="description">Visualiza nuestra aplicación AppSheet como se vería en un dispositivo móvil.</p>
+        
+        <div class="app-container">
+            <div class="phone-container">
+                <iframe src="https://www.appsheet.com/start/1d1614fc-6d1b-47f1-bde2-94d711d48e26?platform=mobile" id="appframe"></iframe>
+            </div>
+            
+            <div class="device-controls">
+                <a onclick="changeView(event, 'mobile')" class="active" title="Vista móvil">
+                    <i class="fas fa-mobile-alt"></i>
+                </a>
+                <a onclick="openModal('tablet')" title="Vista tablet">
+                    <i class="fas fa-tablet-alt"></i>
+                </a>
+                <a onclick="openModal('desktop')" title="Vista escritorio">
+                    <i class="fas fa-desktop"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div id="tabletModal" class="modal">
+            <div class="modal-content" style="max-width: 820px;">
+                <span class="close" onclick="closeModal('tablet')">&times;</span>
+                <iframe class="modal-iframe" src="https://www.appsheet.com/start/1d1614fc-6d1b-47f1-bde2-94d711d48e26" id="tabletFrame"></iframe>
+            </div>
+        </div>
+        
+        <div id="desktopModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('desktop')">&times;</span>
+                <iframe class="modal-iframe" src="https://www.appsheet.com/start/1d1614fc-6d1b-47f1-bde2-94d711d48e26" id="desktopFrame"></iframe>
+            </div>
+        </div>
+    
+        <script>
+            function changeView(event, type) {
+                const frame = document.getElementById('appframe');
+                document.querySelectorAll('.device-controls a').forEach(el => el.classList.remove('active'));
+                event.target.closest('a').classList.add('active');
+    
+                if (type === 'mobile') {
+                    frame.src = "https://www.appsheet.com/start/1d1614fc-6d1b-47f1-bde2-94d711d48e26?platform=mobile";
+                }
+            }
+            
+            function openModal(type) {
+                document.getElementById(`${type}Modal`).style.display = 'flex';
+            }
+            
+            function closeModal(type) {
+                document.getElementById(`${type}Modal`).style.display = 'none';
+            }
+            
+            window.onclick = function(event) {
+                if (event.target.classList.contains('modal')) {
+                    event.target.style.display = 'none';
+                }
+            }
+    
+            document.addEventListener("keydown", function(event) {
+                if (event.key === "Escape") {
+                    document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+                }
+            });
+        </script>
+    </main>
+</body>
+</html>

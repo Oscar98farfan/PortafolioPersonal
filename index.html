@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,91 +9,76 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav-container-desktop">
-                <ul>
-                    <li><a class="items-nav" href="">INICIO</a></li>
-                    <li><a class="items-nav" href="#about-me">PROYECTO DE APLICACIONES</a></li>
-                    <li><a class="items-nav" href="#skills">PROYECTOS DE ANALISIS DE DATOS</a></li>
-                    <li><a class="items-nav" href="">HOBBIES</a></li>
-                    <li><a class="items-nav" href="">FORMACIÓN</a></li>
-                    <li><a class="items-nav" href="">PROYECTOS</a></li>
-                    <li><a class="items-nav" href="">BLOG</a></li>
-                    <li><a class="items-nav" href="">CONTACTO</a></li>
+        <nav class="navbar">
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#proyectos-apps">Apps</a></li>
+                    <li><a href="#proyectos-datos">Análisis de Datos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
-            </div>
-            <div class="nav-container-mobile" style="display: none;">
-                <nav>
-                    <ul>
-                        <li><a class="items-nav" href="">HOME</a></li>
-                        <li><a class="items-nav" href="#about-me">SOBRE MI</a></li>
-                        <li><a class="items-nav" href="#skills">SKILLS</a></li>
-                        <li><a class="items-nav" href="">HOBBIES</a></li>
-                        <li><a class="items-nav" href="">FORMACIÓN</a></li>
-                        <li><a class="items-nav" href="">PROYECTOS</a></li>
-                        <li><a class="items-nav" href="">EXPERIENCIA</a></li>
-                        <li><a class="items-nav" href="">CONTACTO</a></li>
-                    </ul>
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="hero target" style="display: none;" id="banner">
-            <div class="container-hero1">
-                <img id="photo" src="./img/Photo-Me.jpg" alt="Oscar Farfan">
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <img class="profile-img" src="./img/Photo-Me.jpg" alt="Oscar Farfan">
+                <div class="hero-text">
+                    <h1>Oscar Daniel Farfan Juanias</h1>
+                    <h3>Ingeniero Industrial | Analista de Datos | Desarrollador Web</h3>
+                    <p>Especializado en optimización de procesos, desarrollo de aplicaciones y análisis de datos.</p>
+                    <a class="btn" href="./cv.pdf" download>Descargar CV</a>
+                </div>
             </div>
-            <div class="container-hero2">
-                <h2>Hola! Me Llamo Oscar Farfan Juanias</h2>
-                <h3>Soy Ingeniero Industrial y Desarrollador Full Stack</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis porro maxime maiores inventore, ab esse quaerat voluptates fugit, magnam architecto doloremque mollitia perferendis ea harum voluptas repellat deserunt, facere soluta?</p>
-                <button><span>Descargar CV</span></button>
-            </div>
-            <div class="container-hero3">
-                <a href="https://github.com/Oscar98farfan" target="_blank"><img src="./img/Lgithub.png" alt="Git-Hub"></a>
-                <a href="https://www.linkedin.com/in/oscar-farfan-75bb21237/" target="_blank"><img src="./img/linkedin.png" alt="Linkedin"></a>
+            <div class="social-links">
+                <a href="https://github.com/Oscar98farfan" target="_blank"><img src="./img/Lgithub.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/oscar-daniel-farfan-juanias-75bb21237/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn"></a>
                 <a href="https://www.facebook.com/oscar.farfan.31/" target="_blank"><img src="./img/facebook.png" alt="Facebook"></a>
             </div>
         </section>
-
-        <section class="container-main target" style="display: none;" id="about-me">
-            <div class="container-main-about1">
-                <h2>SOBRE MI</h2>
-            </div>
-            <div class="container-main-about2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis consequuntur ad nulla, dolores quam nihil. Cum beatae vero eum accusamus, officiis cupiditate, delectus quas iste accusantium fuga consectetur odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, mollitia harum. Nisi ipsum exercitationem ipsa fugiat vel natus labore tenetur ullam quas facere? Velit suscipit asperiores facere, architecto delectus error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptate dolor perferendis in reprehenderit asperiores excepturi earum eaque laboriosam facilis suscipit esse praesentium doloremque ea eligendi, repudiandae, unde accusantium! Explicabo.</p>
-            </div>
-            <div class="container-main-about3">
-                <img src="./img/about-me.jpg" alt="">
+        
+        <section id="proyectos-apps" class="section">
+            <h2>Proyectos de Aplicaciones</h2>
+            <p>Explora las aplicaciones desarrolladas con AppSheet y otras plataformas.</p>
+            <div class="project-grid">
+                <div>
+                    <a href="App1.html" class="project-card">📱 Control de Ventas</a>
+                    <p>"Gestiona productos, ventas, compras y facturas, todo en un solo lugar. Mantén el control total de tu stock, recibe alertas cuando esté bajo y agiliza la comunicación con tus clientes a través de la integración con WhatsApp. ¡Descubre la eficiencia y el poder de nuestra aplicación para hacer crecer tu negocio!" </p>
+                </div>
+                <div>
+                    <a href="apps/app2.html" class="project-card">📱 Control de Almacen</a>
+                    <p>"Presentamos nuestra solución para la gestión inteligente de almacenes. Registra tus entradas y salidas, y visualiza en tiempo real el espacio disponible y ocupado. Optimiza tu almacenamiento, toma decisiones informadas y maximiza la eficiencia de tu operación."</p>
+                </div>
+                <div>
+                    <a href="apps/app3.html" class="project-card">📱 Inventarios</a>
+                    <p>"Simplifica tus inventarios con nuestra solución integral. Realiza levantamientos precisos, con o sin historial, y genera automáticamente primeros, segundos y terceros conteos. Obtén un consolidado final para una visión completa de tu stock. Optimiza tu gestión de inventarios y toma decisiones informadas."</p>
+                </div>
             </div>
         </section>
-
-        <section class="container-main1 target" id="skills">
-            <div class="container-main-skills0">
-                <h2>He realizado diferentes proyectos apoyandome en:</h2>
-            </div>
-            <div class="container-main-skills1">
-                <img src="./img/html-c.png" alt="HTML">
-                <h4>HTML</h4>            
-            </div>
-            <div class="container-main-skills2">
-                <img src="./img/css-c.png" alt="CSS">
-                <h4>CSS</h4>
-            </div>
-            <div class="container-main-skills3">
-                <img src="./img/js-c.png" alt="JS">
-                <h4>JavaScript</h4>
-            </div>
-            <div class="container-main-skills4">
-                <img src="./img/python-c.png" alt="Python">
-                <h4>Python</h4>
-            </div>
-            <div class="container-main-skills5">
-                <img src="./img/bd-c.png" alt="BD">
-                <h4>SQL</h4>
-            </div>
-            <div class="container-main-skills6">
-                <img src="./img/AppSheet-c.png" alt="AppSheet">
-                <h4>AppSheet</h4>
+        
+        <section id="proyectos-datos" class="section">
+            <h2>Proyectos de Análisis de Datos</h2>
+            <p>Descubre los análisis y visualizaciones desarrolladas en Power BI, Excel y Python.</p>
+            <div class="project-grid">
+                <div>
+                    <a href="analisis/datos1.html" class="project-card">📊 Universitarios 2015 -2020</a>
+                    <p>Este dashboard muestra tendencias de matrícula por género, regiones y las carreras más demandadas. Con esta visualización, es más fácil identificar patrones y oportunidades en el sector educativo.<br> 🔍 Algunos insights clave:
+                        <br>✅ Matrículas por año y género.
+                        <br>✅ Carreras con mayor demanda.
+                        <br>✅ Distribución por departamentos.
+                    </p>
+                </div>
+                <div>
+                    <a href="analisis/datos2.html" class="project-card">📊 Análisis 2</a>
+                    `<p></p>
+                </div>
+                <div>
+                    <a href="analisis/datos3.html" class="project-card">📊 Análisis 3</a>
+                    <p></p>
+                </div>
             </div>
         </section>
     </main>
