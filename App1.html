@@ -25,7 +25,21 @@
                 <iframe src="https://www.appsheet.com/start/1d1614fc-6d1b-47f1-bde2-94d711d48e26?platform=mobile" id="appframe"></iframe>
             </div>
             <div class="demo-container">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus vitae impedit quos, fuga repudiandae dolores enim obcaecati eius repellat maxime explicabo aut beatae doloremque, repellendus, minima dolorum minus itaque architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, hic tempore similique minima placeat molestiae, exercitationem fuga soluta debitis eum molestias nesciunt quas corrupti, illo iste a cupiditate dicta! Accusamus?</p>
+                <h1>El Futuro del Comercio en Tus Manos</h1>
+                <p>En el dinámico mundo del comercio actual, la agilidad y la eficiencia son la clave para el éxito. Los propietarios de tiendas se enfrentan a desafíos constantes: gestionar inventarios, procesar ventas, atender a clientes y analizar datos, todo mientras buscan formas de crecer y expandirse. En este contexto, la tecnología se convierte en un aliado indispensable. <br> <br>
+                Nuestra aplicación de gestión de ventas ha sido diseñada para ser ese aliado. No es solo una herramienta, sino una solución integral que transforma la forma en que gestionas tu negocio. Imagina tener el control total de tu tienda en la palma de tu mano, con acceso a información en tiempo real, automatización de tareas y análisis detallados que te permiten tomar decisiones informadas.<br> <br>
+                Hemos creado una plataforma intuitiva y poderosa que se adapta a las necesidades de tu tienda, independientemente de su tamaño o sector. Desde la gestión de inventario hasta la atención al cliente, nuestra aplicación simplifica cada aspecto de tu operación, liberándote para que te concentres en lo que realmente importa: hacer crecer tu negocio. <br> <br> 
+                Con nuestra aplicación, podrás decir adiós a las hojas de cálculo y a los procesos manuales. Experimenta la libertad de gestionar tu tienda desde cualquier lugar y en cualquier momento, con la confianza de que tienes a tu disposición las herramientas más avanzadas para el éxito. <br>
+                Algunas de sus Caracteristicas son: <br><br>
+                ✅ Control de clientes y proveedores <br>
+                ✅ Inventario en tiempo real <br>
+                ✅ Reportes y analisis detallados <br>
+                ✅ Roles de administrador y vendedor <br>
+                ✅ Integraciòn con WhatsApp <br>
+                
+            
+            
+            </p>
             </div>
             <div class="device-controls">
                 <a onclick="changeView(event, 'mobile')" class="active" title="Vista móvil">
@@ -56,41 +70,23 @@
             </div>
         </div>
     
-        <script>
-            function changeView(event, type) {
-                const frame = document.getElementById('appframe');
-                document.querySelectorAll('.device-controls a').forEach(el => el.classList.remove('active'));
-                event.target.closest('a').classList.add('active');
-    
-                if (type === 'mobile') {
-                    frame.src = "https://www.appsheet.com/start/1d1614fc-6d1b-47f1-bde2-94d711d48e26?platform=mobile";
-                }
-            }
-            
-            function openModal(type) {
-                document.getElementById(`${type}Modal`).style.display = 'flex';
-            }
-            
-            function closeModal(type) {
-                document.getElementById(`${type}Modal`).style.display = 'none';
-            }
-            
-            window.onclick = function(event) {
-                if (event.target.classList.contains('modal')) {
-                    event.target.style.display = 'none';
-                }
-            }
-    
-            document.addEventListener("keydown", function(event) {
-                if (event.key === "Escape") {
-                    document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
-                }
-            });
-        </script>
+        <script  src="scriptApps.js" defer></script>
     </main>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque harum at! Ratione eius nostrum cumque, repellat quas, sunt veritatis quaerat a accusamus itaque recusandae quibusdam expedita aliquam. Similique, maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate voluptatum odit accusantium iure tempore aspernatur laudantium id vero quia. Perspiciatis aliquam dignissimos provident quam animi quo omnis. Nesciunt, quod rem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur molestias ipsum nisi tempore reiciendis consectetur, nesciunt totam magni debitis quis vero saepe, facilis repudiandae a. Dolor fugit quia ipsa beatae.</p>
-    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Oscar Farfan. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Uso</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Oscar98farfan" target="_blank"><img src="./img/Lgithub.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/oscar-daniel-farfan-juanias-75bb21237/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/oscar.farfan.31/" target="_blank"><img src="./img/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
 
 
 </body>

@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oscar Farfan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel=
+    "stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-container">
+                <button class="hamburger-menu">☰</button>
                 <ul class="nav-list">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#proyectos-apps">Apps</a></li>
@@ -20,8 +22,19 @@
                 </ul>
             </div>
         </nav>
+        <aside class="side-menu">
+            <ul class="side-menu-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos-apps">Apps</a></li>
+                <li><a href="#proyectos-datos">Análisis de Datos</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </aside>
+        <div class="overlay"></div>
+        
     </header>
-
+    
     <main>
         <section id="inicio" class="hero">
             <div class="hero-content">
@@ -82,5 +95,6 @@
             </div>
         </section>
     </main>
+    <script src="script.js" defer></script>
 </body>
 </html>

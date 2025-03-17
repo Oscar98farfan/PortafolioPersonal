@@ -63,6 +63,65 @@ header {
     border-bottom: 2px solid var(--white);
 }
 
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculto por defecto */
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--azul-claro), var(--azul-oscuro));
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1001;
+}
+
+.side-menu.open {
+    left: 0; /* Visible cuando está abierto */
+}
+
+.side-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.side-menu-list li a {
+    color: var(--white);
+    font-size: var(--lg);
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+/* ----- Botón Hamburguesa ----- */
+.hamburger-menu {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Oculto en pantallas grandes */
+}
+
+/* --- overlay --- */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: none;
+}
+.overlay.active{
+    display: block;
+}
+
+
+
+
+
 /* ----- Hero (Sección de Inicio) ----- */
 .hero {
     display: flex;
@@ -172,11 +231,14 @@ header {
 
 
 /* ----- Responsividad ----- */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 568px) {
     .nav-list {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+        display: none; /* Oculta la lista de navegación en pantallas pequeñas */
+    }
+
+    .hamburger-menu {
+        display: block; /* Muestra el botón hamburguesa */
     }
 
     .hero {
@@ -184,11 +246,11 @@ header {
     }
 
     .profile-img {
-        /* display: none; */
-        width: 100px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
     }
 }
+
 
 
 
