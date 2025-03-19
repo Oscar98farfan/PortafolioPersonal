@@ -98,7 +98,7 @@ main {
 .phone-container {
     grid-area: 1 / 1 / 2 / 2;
     padding: 10px;
-    width: 340px;
+    width: 420px;
     height: 640px;
     border: 12px solid black;
     border-radius: 30px;
