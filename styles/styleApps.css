@@ -98,7 +98,7 @@ main {
 .phone-container {
     grid-area: 1 / 1 / 2 / 2;
     padding: 10px;
-    width: 420px;
+    width: 460px;
     height: 640px;
     border: 12px solid black;
     border-radius: 30px;
@@ -242,7 +242,7 @@ footer {
 }
 
 /* ----- Contenido del Contenedor de Demostración ----- */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .demo-container {
         padding: 10px;
         font-size: 14px;
