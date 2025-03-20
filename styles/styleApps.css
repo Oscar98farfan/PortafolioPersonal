@@ -261,7 +261,7 @@ footer {
 @media (max-width: 600px) {
     .phone-container {
         width: 90vw;
-        max-width: 400;
+        max-width: 500;
         height: 570px;
         border-width: 8px;
     }
